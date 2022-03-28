@@ -8,4 +8,4 @@ Feature: Shopping on a "https://mystore-testlab.coderslab.pl"
 
     Examples:
       | email | password | alias | address | city | zip/postal code | phone | size | quantity |
-      | tomaszflantowicz@coderslab.com | Test123 | TF | Kolejowa | Wroclaw | 51502 | 500600700 | S | 3 |
+      | tomaszflantowicz@coderslab.com | Test123 | TF | Kolejowa | Wroclaw | 51502 | 500600700 | S | 5 |
