@@ -54,13 +54,15 @@ public class WebLogin {
         WebLogIn.click();
         WebAddressLink.click();
     }
-    public static void AddressAdd(String Alias, String Address, String City, String Zip, String phone) {
+    public static void AddressAdd(String Alias, String Address, String City, String Zip, String phone) throws InterruptedException {
         WebAlias.sendKeys(Alias);
         WebAddress.sendKeys(Address);
         WebZip.sendKeys(Zip);
         WebCity.sendKeys(City);
         WebCountry.click();
+        Thread.sleep(1000);
         WebPhone.sendKeys(phone);
+        Thread.sleep(1000);
         WebSave.click();
         System.out.println("----------------------Sprawdzanie adresu------------------------");
         CheckInfoAboutAddedAddress(Alias, Address, City, Zip, phone);

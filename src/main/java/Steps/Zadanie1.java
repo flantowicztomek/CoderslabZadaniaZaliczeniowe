@@ -23,7 +23,7 @@ public class Zadanie1 {
     }
 
     @When("Take {string} and {string} to login user and add address {string}, {string}, {string}, {string}, {string}")
-    public void takeAndToLoginUserAndAddAddress(String login, String password, String alias, String address, String city, String zip, String phone){
+    public void takeAndToLoginUserAndAddAddress(String login, String password, String alias, String address, String city, String zip, String phone) throws InterruptedException {
         WebLogin WebLogin = new WebLogin(driver);
         WebLogin.LoginUser(login, password);
         WebLogin.AddressAdd(alias, address, city, zip, phone);

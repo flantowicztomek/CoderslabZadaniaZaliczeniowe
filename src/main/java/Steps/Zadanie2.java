@@ -28,7 +28,7 @@ public class Zadanie2 {
         driver.get(URL);
     }
     @When("Take {string} and {string} to login and add address {string}, {string}, {string}, {string}, {string}")
-    public void takeAndToLoginAndAddAddress(String login, String password, String alias, String address, String city, String zip, String phone) {
+    public void takeAndToLoginAndAddAddress(String login, String password, String alias, String address, String city, String zip, String phone) throws InterruptedException {
         new WebLogin(driver);
         Pages.WebLogin.LoginUser(login, password);
         Pages.WebLogin.AddressAdd(alias, address, city, zip, phone);
